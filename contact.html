@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+    
+
+  <style>
+
+    .btn-primary {
+        border-color: #ae142a;
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: 700;
+        color: #fff;
+        background-color: #ae142a;
+        margin-top: 5px;
+    }
+    </style>
+
+  <script>
+    function testVariable() {
+        var sn = document.getElementById("n1").value;          
+        var se = document.getElementById("e1").value;
+        var result = sn +'\n\r'+ se+ '\n\r' ;
+        
+        
+        document.getElementById("t1").textContent = result;
+        
+        
+        
+    }
+</script>
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Naron's  Profile</a>
+      <button class="btn btn-primary" onclick="history.back()">Go Back</button>
+
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li ><a href="boot.html">Home</a></li>
+      <li><a href="second.html" class="nav-item nav-link mx-3">AboutMe</a></li>
+      
+      <li ><a href="galary.html" class="nav-item nav-link mx-3">Gallery</a></li>
+      <li class="active"><a href="contact.html" class="nav-item nav-link mx-3">ContactMe</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="login.html">Logout</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Favourates</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<header>
+	<h1>Contact Me Here </h1>
+</header>
+
+
+<div id="form">
+
+<div class="fish" id="fish"></div>
+<div class="fish" id="fish2"></div>
+
+<form id="waterform"  action="">
+
+<div class="formgroup" id="name-form">
+    <label for="name">Your name*</label>
+    <input type="text" id="n1" name="name" />
+</div>
+
+<div class="formgroup" id="email-form">
+    <label for="email">Your e-mail*</label>
+    <input type="number" id="e1" name="email" />
+</div>
+
+<input type="submit" onclick=testVariable()>
+<input type="reset">
+<div class="formgroup" id="message-form">
+    <label for="message">Review message</label>
+    <textarea id="t1" name="message"></textarea>
+</div>
+
+	
+</form>
+</div>
+
+
+
+
+
+</body>
+</html>

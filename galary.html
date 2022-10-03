@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+
+.btn-primary {
+    border-color: #ae142a;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #ae142a;
+    margin-top: 5px;
+}
+</style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Naron's  Profile</a>
+      <button class="btn btn-primary" onclick="history.back()">Go Back</button>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li ><a href="boot.html">Home</a></li>
+      <li><a href="second.html" class="nav-item nav-link mx-3">AboutMe</a></li>
+      
+      <li class="active"><a href="#" class="nav-item nav-link mx-3">Gallery</a></li>
+      <li><a href="contact.html" class="nav-item nav-link mx-3">ContactMe</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="login.html">Logout</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Favourates</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+<!-- bootstrap image gallery 1 -->
+<div class="container-fluid">
+
+    <div class="jumbotron">
+      <h1 class="text-center">Life of Akshay</h1>
+      
+    </div>
+  
+    <div class="row">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <figure>
+          <img style="width: 300px" src="one1.jpeg">
+          
+        </figure>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <figure>
+            <img style="width: 300px" src="one.jpeg">
+        </figure>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <figure>
+            <img style="width: 300px" src="one2.jpeg">
+        </figure>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <figure>
+            <img style="width: 300px" src="one4.jpeg">
+        </figure>
+      </div>
+      
+    </div>
+  </div>
+  
+
+</body>
+</html>
